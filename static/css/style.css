@@ -22,7 +22,11 @@ padding-top: 10px;
 }
 
 .dark-bg {
-    background-color: #3398E1;
+background-color: #3398E1;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
 }
 
 /*Index*/
