@@ -4,6 +4,7 @@ from .models import Post
 from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
+
 class PostAdmin(SummernoteModelAdmin):
 
     list_display = ('title', 'slug', 'status')

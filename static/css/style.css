@@ -2,15 +2,9 @@
 body {
 font-family: "Roboto", sans-serif;
 font-size: 17px;
-background-color: #e8e1e1;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
+background-color: #fcf8f8;
 }
 
-footer{
-    margin-top: auto;
-}
 .shadow {
 box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
 }
@@ -21,32 +15,29 @@ border-color: #dc281e;
 }
 .masthead {
 background: #3398E1;
-height: auto;
 padding-bottom: 15px;
 box-shadow: 0 16px 48px #E3E7EB;
 padding-top: 10px;
+
 }
 
 .dark-bg {
 background-color: #3398E1;
 }
 
-/*Index*/
+.btn:hover,
+.btn:active {
+    background-color: #fff;
+    color: #23BBBB;
+}
    
 
 .head_text {       
     color: white;
 }
 
-
-/*Sidebar*/
 .card{
     box-shadow: 0 16px 48px #E3E7EB;
 }
 
-input[type=text], input[type=email], textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-   }
+

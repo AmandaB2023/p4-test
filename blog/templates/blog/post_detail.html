@@ -13,6 +13,7 @@
         <!-- Post author goes before the | the post's created date goes after -->
         <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
         <p class="card-text ">{{ object.content | safe }}</p>
+        <button class="btn btn-signup right" onclick="history.back()">Go Back</button>
       </div>
     </div>
     {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
