@@ -27,7 +27,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-eh)xka6$s_%!9th)873&#=0^=^0%!-%5=zuk(ixallw&-s839*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = '8000-amandab2023-p4test-bere97m43m1.ws-eu115.gitpod.io','.herokuapp.com'
 
@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'about',
     'blog',
     'contact',
+    'horses_app',
 ]
 
 SITE_ID = 1

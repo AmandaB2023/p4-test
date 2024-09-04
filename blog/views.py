@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404 ,reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
@@ -53,18 +53,22 @@ def post_detail(request, slug):
         "comment_count": comment_count,
         "comment_form": comment_form,}
     )
+
+
 def comment_edit(request, slug, comment_id):
     """
     view to edit comments
     """
+    print('Entering comment edit view')
     if request.method == "POST":
-
+        print('Entering if request method posts')
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comment = get_object_or_404(Comment, pk=comment_id)
         comment_form = CommentForm(data=request.POST, instance=comment)
-
+        print('Ending if request method posts')
         if comment_form.is_valid() and comment.author == request.user:
+            print('Entering if request comment is valid')
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.approved = False
@@ -72,7 +76,7 @@ def comment_edit(request, slug, comment_id):
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
             messages.add_message(request, messages.ERROR,
-                                 'Error updating comment!')
+                                'Error updating comment!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
