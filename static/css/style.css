@@ -3,6 +3,9 @@ body {
 font-family: "Roboto", sans-serif;
 font-size: 17px;
 background-color: #fcf8f8;
+min-height: 100vh;
+display: flex;
+font-family: 'Monserrat', sans-serif;
 }
 
 .logo {
@@ -65,13 +68,17 @@ position: relative;
 }
 
 .head_text {       
-    color: white;
+color: white;
 }
 
 .card{
-    box-shadow: 0 16px 48px #E3E7EB;
+box-shadow: 0 16px 48px #E3E7EB;
+    
 }
-
+.comment-body{
+border: none;
+background-color: transparent;    
+}
 .btn-delete {
     color: #fff;
     background: #E84610;

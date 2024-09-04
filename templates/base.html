@@ -34,7 +34,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{% url 'home' %}" aria-label="Click here to go to the home page">
-                    <img class="logo" src="{% static 'images/fitness_club.webp' %}" alt="Fitness Club Logo">
+                    <img class="logo" src="{% static 'images/fitness_club.webp' %}" alt="Fitness Club Logo and">
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,13 +53,13 @@
                             <a
                               class="nav-link
                               {% if request.path == about_url %}active{%endif%}"
-                              aria-current="page"
+                              aria-current="about page"
                               href="{% url 'about' %}">About</a>
                           </li>
                           <li>
                             <a class="nav-link
                               {% if request.path == contact_url %}active{%endif%}"
-                              aria-current="page"
+                              aria-current=" contact page"
                               href="{% url 'contact' %}">Contact</a>
                           </li>
                           {% if user.is_authenticated %}

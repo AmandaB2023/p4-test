@@ -13,13 +13,15 @@
       <!-- Post title goes in these h1 tags -->
         <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
         <!-- Post author goes before the | the post's created date goes after -->
-        <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
-        <p class="card-text ">{{ object.content | safe }}</p>
+        <p class="text-muted">{{ post.author }} | {{ post.created_on }}</p>
+        <p class="card-text">
+          {{ post.content | safe }}
+      </p>
         <button class="btn btn-signup right" onclick="history.back()">Go Back</button>
       </div>
     </div>
   
-    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+  
   
   </div>
         <!-- Displaying count of comments -->
@@ -37,7 +39,7 @@
         <div class="row">
           <div class="col-md-8 card mb-4  mt-3 ">
             <h3>Comments:</h3>
-            <div class="card-body">
+            <div class="comment-body">
               <!-- We want a for loop inside the empty control tags
                 to iterate through each comment in comments -->
               {% for comment in comments %}
@@ -80,7 +82,7 @@
                   {{ comment_form | crispy }}
                   {% csrf_token %}
                   <button id="submitButton" type="submit"
-                    class="btn btn-signup btn-lg">Submit</button>
+                    class="btn btn-lg">Submit</button>
                 </form>
                 {% else %}
                 <p>Log in to leave a comment</p>
