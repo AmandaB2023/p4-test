@@ -7,9 +7,10 @@
   <div class="row">
     <div class="col-md-8 card mb-4  mt-3 left  top">
       <div class="card-body">
-        <div class="d-none d-md-block col-md-6 masthead-image">
-        
-      </div>
+
+      <div class="d-none d-md-block col-md-6 masthead-image">
+        <img src="{{ post.featured_image.url }}"  alt="placeholder">
+    </div>
       <!-- Post title goes in these h1 tags -->
         <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
         <!-- Post author goes before the | the post's created date goes after -->
