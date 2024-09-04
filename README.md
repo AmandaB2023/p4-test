@@ -11,7 +11,7 @@
 * I contact Fitness Club via the contact page.
 * I can also register for the Fitness Club blog with my name and email.
 
-### Registered User / Lodded In Users
+### Registered User / Logged In Users
 
 * As a resistered user I can log in to the blog 
 * I can comment on the varioous diferent blog post.
@@ -31,8 +31,51 @@
   * delete contact messages.
   * edit the about page
 
+### Features to Achieve Goals
+
+* The blog will be responsive ona variety of devices,  I will also test it on various devices and screen sizes.
+
+* A listt of blog posts will be displayed on the home/ blog page.
+
+*  A user can then click on a blog post to read the full article.
+
+* The About page eill contain information about the blog itself.
+
+* Logged in used will be able to leave comment with full CRUD functionality.
+
+* Users will also be able to conyact the blog via a conact page.*
+
+## Site Structure
+All pages will have:
+
+* A responsive navigation bar. Which when viewed on larger screen sizes such as a laptop or desktop, will be at the top left side of the header. This allows the user to navigate through the site via page links to the blog, about, and contact pages.
+
+* On the left side of the header opposite the navigation elements, we have a logo for Fitness Club which also acts as a link to the home page.
+
+* On smaller screen sizes such as mobile phones or tablets to allow for a good user experience of the site, the Fitness Club navigation menu text is hidden to prevent the navigation bar from being cluttered. 
+
+* When viewing the site with mobile devices and/or tablets the navigation links change to a toggle menu with the use of a burger icon. This was implemented to give the site a clean and non-cluttered appearance, as well as to provide a good user experience. Given that most users would already be familiar with seeing and using the burger icon when navigating websites on mobile and other smaller-screen devices.
+
+* A footer that contains links and icons for the four main social media platforms namely Facebook, Instagram, Twitter and YouTube. 
+
 
 ## Wireframes
+
+The wireframes for the website were designed using  [Canva](https://www.canva.com//) . The designs vary from the end layout in some places due to creative decisions made throughout the development process.
+
+*   Home / Blog
+
+![Home_wireframe](documentation/blog.jpg)
+
+*   About
+
+![About_wireframe](documentation/about.jpg)
+
+*   Contact
+
+![Contact_wireframe](documentation/contact.jpg)
+
+
 ## Technologies Used
 The following technologies were used to complete this project.
 
@@ -61,19 +104,38 @@ The following technologies were used to complete this project.
 
 ## Design
 
-The design of the blg was kept very basic to allow for the cntent of each blog post to be the feature.
+The design of the blog was kept very basic to allow for the content of each blog post to be the feature.
 
 ### Color Scheme
 
-For the colour scheme I tol inspiration from my locl gym whose colours are blue and white.
+For the colour scheme I took inspiration from my local gym whose colours are blue and white.
+
+
+![Blog Colours](documentation/blog-colours.jpg)
 
 ### Typography
 
-Again I used basic Monserrett as it conveys a clean and professional look, it is also easy for all users to read.
+Again I used basic Roboto as it is one of the most popular font types for use online . It conveys a clean and professional look and  is also easy for all users to read. I aslo set the bakup font to the in built Sans serif.
+
+![Blog Font](documentation/roboto.jpg)
 
 ### Imagery
 
+For my logo I used an image which I founf on a google search and it just suited the theme of my blog so It did not require any editing.
+
+![Logo Image](documentation/fitness_club.webp)
+
+
+While the other images I used for the blog posts where free images I found online from various resources such as [Freepik](https://www.freepik.com/)
+
+![Blog Post Image](documentation/ice-bath.jpeg)
+
+![Blog  Post Image](documentation/fitness-important.jpeg)
+
+
 ## Testing
+
+Please refer to the [TESTING](TESTING.md) file for all test-related documentation.
 
 ## Agile Methodology
 
@@ -81,5 +143,62 @@ Again I used basic Monserrett as it conveys a clean and professional look, it is
 
 Was used in order to manage the development of the blog for my project , this was my first time using Github project Managment and I while I am still getting used to using this tool I found it very benefical to see what tasks I had completed and what was still outstanding.
 
+![Github project Management](documentation/project-management.jpg)
+## Deployment
+
+
+#### Deployment to GitHub Pages
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+*   In the GitHub repository, navigate to the Settings tab
+*   From the source section drop-down menu, select the Main Branch, then click "Save".
+*   The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here: [Github]()
+
+
+#### Local Deployment
+In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository.
+
+1.   Sign in to GitHub, locate the repository and click to open the repository.
+
+2.   On the repository main page, click the green code button where the files are located. 
+
+3.   This will open a drop down menu.
+
+4.   In the dropdown menu stay on the HTTPS option and click the copy icon button next to the URL to copy it.
+
+5.   Next open Git Bash and type git clone and your directory link.#
+
+6.  Then type cd and the directory name.
+
+7. Then code . to open VS Studio using Windows.
+
+## Future Improvments
+
+
+*   Make improvements to the contact form.
+*   Add a search box to allow uses to seach for certain blog posts which intrest them.
+*   Improve my use of Github Project Management as I found it difficent to get used to using although it was quite benefical.
+
+
 ## Credits
+
+*   Fonts were imported from Google Fonts.
+*   Icons were imported from Font Awesome.
+*   The Code Institute I think Therefore I blog walkthrough p for the basic blog structure 
+* [Django](https://www.djangoproject.com/) for the framework.
+
+### Content
+* The content for the blog posts I took from [Spunout](https://spunout.ie/) and [Womens Best](https://ie.womensbest.com/)
+
+### Tools
+*   [Canva](https://www.canva.com) was used to create the logo and to resize the images where needed.
+*   Snipping Tool was used to take pictures of my screen for testing.
+*   [Freeconvert](https://www.freeconvert.com/) was used to convert my images from jpg or png to webp.
+* [Font awesome](https://fontawesome.com/): for the free access to icons.
+*  [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en): for providing a free platform to test website responsiveness
+
 ## Acknowledgments 
+*   First and foremost my mentor Juliia Konovalova for all her advice and guidance on this first project. She was a great help throughout.
+
+*   Code Institute tutors and Slack community members for their support and help.
