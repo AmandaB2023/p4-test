@@ -27,7 +27,7 @@ This project was  tested throughout the development stage.
 | YouTube icon in the footer | Click on the YouTube icon | The user is redirected to the YouTube page | Yes | Yes | - |
 | Blog page | | | | | |
 | Read More  |When user clicks on this the can view the full log post | | Yes|Yes | |
-|User Login | Submit registration form   | The user can then view anf leave a comment | Yes | Yes | - |
+|User Login | Submit registration form   | The user can then view and leave a comment | Yes | Yes | - |
 
 
 ## Lighthouse Report
