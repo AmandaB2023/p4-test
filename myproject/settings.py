@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'about',
     'blog',
     'contact',
-    'horses_app',
+    'products_app',
 ]
 
 SITE_ID = 1

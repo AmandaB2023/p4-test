@@ -8,7 +8,9 @@
         <div class="row">
             <div class=" col-md-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h3 class=" site-heading my-4 mt-3 text-white"> Welcome to our blog see our horses </h3>
+                    <h3 class=" site-heading my-4 mt-3 text-white">This months featured
+                        products </h3>
+                    <h4>This month we reviewed different type of protein</h4>
                 </div>
             </div>
         </div>
@@ -18,15 +20,15 @@
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8 mt-3 left">
-            {% for horse in horse_list %}
+            {% for product in product_list %}
             <div class="card mb-4">
                 <div class="card-body">
-                    {% if "placeholder" in horse.featured_image.url %}
+                    {% if "placeholder" in product.featured_image.url %}
                     <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="placeholder image">
                     {% else %}
-                    <img class="card-img-top" src=" {{ horse.featured_image.url }}" alt="{{ horse.title }}">
+                    <img class="card-img-top" src=" {{ product.featured_image.url }}" alt="{{ product.title }}">
                     {% endif %}
-                    <h2 class="card-title">{{ horse.name }}</h2>
+                    <h2 class="card-title">{{ product.name }}</h2>
                 </div>
             </div>
             {% endfor %}
