@@ -2,30 +2,27 @@
 {% block content %}
 {% load static %}
 
-<div class="container mt-5">
-    <div class="row">
-        <div class=" col-md-8 col-md-10 mx-auto">
-    </div>
-    <div class="col-8">
-      <!-- Title goes between these h2 tags -->
-      <h2>{{ about.title }}</h2>
-      {% if "placeholder" in about.profile_image.url %}
-      <img src="{% static 'images/about-image.webp' %}" width="75%"
-        alt="placeholder image" >
-      {% else %}
-      <img src="{{ about.profile_image.url }}" width="75%"
-        alt="{{ about.title }}">
-      {% endif %}
-      <!-- Content goes directly underneath this -->
-      {{ about.content | safe }}
-    </div>
+<div class="container fluid">
+  <div class=" col-md-8 col-md-10 mx-auto">
   </div>
-  <div class="row">
-    <div class="col text-right">
-      <!-- Updated on field goes in here -->
+  <div class="container grid text-center">
+    <!-- Title goes between these h2 tags -->
+    <h2>{{ about.title }}</h2>
+    {% if "placeholder" in about.profile_image.url %}
+    <img src="{% static 'images/about-image.webp' %}" width="50%" style="margin: 1.3em;" alt="placeholder image">
+    {% else %}
+    <img src="{{ about.profile_image.url }}" width="50%" alt="{{ about.title }}">
+    {% endif %}
+    <!-- Content goes directly underneath this -->
+    {{ about.content | safe }}
+  </div>
+</div>
+<div class="row">
+  <div class="col text-right">
+    <!-- Updated on field goes in here -->
 
-      <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
-    </div>
+    <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
   </div>
+</div>
 </div>
 {% endblock content %}
