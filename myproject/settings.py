@@ -23,8 +23,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
+
+CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-eh)xka6$s_%!9th)873&#=0^=^0%!-%5=zuk(ixallw&-s839*'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -52,6 +55,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'about',
     'blog',
+    'booking',
     'contact',
     'products_app',
 ]

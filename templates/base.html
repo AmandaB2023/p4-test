@@ -66,6 +66,11 @@
                                 href="{% url 'products_list' %}">Products</a>
                         </li>
                         {% if user.is_authenticated %}
+                        <li>
+                            <a class="nav-link
+                            {% if request.path == contact_url %}active{%endif%}" aria-current=" contact page"
+                                href="{% url 'booking' %}">Free Trial</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
                                 href="{% url 'account_logout' %}">Logout</a>
