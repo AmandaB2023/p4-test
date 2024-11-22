@@ -6,7 +6,6 @@ class Product(models.Model):
     name = models.CharField(max_length=200, unique=True)
     featured_image = CloudinaryField('image', default='placeholder')
     about = models.TextField()
-    about = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
 

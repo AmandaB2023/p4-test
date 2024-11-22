@@ -6,11 +6,10 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class=" col-md-8 col-md-10 mx-auto">
+            <div class=" col-md-8 col-md-10 mx-auto text-center">
                 <div class="site-heading">
-                    <h3 class=" site-heading my-4 mt-3 text-white">This months featured
-                        products </h3>
-                    <h4>This month we reviewed different type of protein</h4>
+                    <h3 class=" site-heading my-4 mt-3 text-white">This months featured product is </h3>
+                    <h4> The Whey Protein 360 Extreme</h4>
                 </div>
             </div>
         </div>
@@ -19,16 +18,20 @@
 <div class="container">
     <div class="row">
         <!-- Blog Entries Column -->
-        <div class="col-md-8 mt-3 left">
+        <div class="mx-auto" style="width: 800px; margin-top: 1.3em">
             {% for product in product_list %}
-            <div class="card mb-4">
-                <div class="card-body">
+            <div class=" card mb-4 ">
+                <div class=" card-body align-items-center">
                     {% if "placeholder" in product.featured_image.url %}
-                    <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                    <img class="card-img-top" src="{% static 'images/default.jpg' %}" style="width: 200px;"
+                        alt="placeholder image">
                     {% else %}
-                    <img class="card-img-top" src=" {{ product.featured_image.url }}" alt="{{ product.title }}">
+                    <img class="card-img-top" src=" {{ product.featured_image.url }}" style="width: 200px;" alt="
+                        {{ product.title }}">
                     {% endif %}
                     <h2 class="card-title">{{ product.name }}</h2>
+                    <!-- Content goes directly underneath this -->
+                    {{ product.about | safe }}
                 </div>
             </div>
             {% endfor %}
