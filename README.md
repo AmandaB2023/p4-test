@@ -18,6 +18,7 @@
 * I can edit my comments.
 * I can delete my comments.
 * I can see that my comments are awaiting approval.
+* I can book a free trial.
 * I can logout of the blog.
 
 ### Site Administrator
@@ -37,13 +38,16 @@
 
 * A listt of blog posts will be displayed on the home/ blog page.
 
-*  A user can then click on a blog post to read the full article.
+* A user can then click on a blog post to read the full article.
 
 * The About page eill contain information about the blog itself.
 
 * Logged in used will be able to leave comment with full CRUD functionality.
 
-* Users will also be able to conyact the blog via a conact page.*
+* Users will also be able to contact the blog via a contact page.
+
+* Logged in users will also be able to book a free trial via the booking page.
+
 
 ## Site Structure
 All pages will have:
@@ -176,9 +180,10 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 ## Future Improvments
 
 
-*   Make improvements to the contact form.
+*   Make improvements to the contact form to make it more aestertically pleasing.
 *   Add a search box to allow uses to seach for certain blog posts which intrest them.
 *   Improve my use of Github Project Management as I found it difficent to get used to using although it was quite benefical.
+*   When a user bookins a free trial sent an email conforming this.
 
 
 ## Credits
