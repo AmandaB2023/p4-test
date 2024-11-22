@@ -21,6 +21,7 @@ All Css was validated using [W3C Jigsaw](https://jigsaw.w3.org/css-validator/)
 ### Javascript
 
 The javascrip for this project was validated using [Jshint](https://jshint.com/)
+
 | File Name             | Pass | View Result                                                              | Notes                                                                                                                                                                                            |
 | --------------------- | ---- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | base.css          | ✅    | [Result](documentation/p4_comments.jpg)      |  
@@ -51,6 +52,11 @@ The Python files for this project were validated using  [PEP8 CI Online](https:/
 | models.py          | ✅    | [Result](documentation/p4_booking_models.jpg)      |  
 | urls.py          | ✅    | [Result](documentation/p4_booking_urls.jpg)      |  
 | views.py          | ✅    | [Result](documentation/p4_booking_views.jpg)      |  
+| Products    |   |   |  
+| admin.py          | ✅    | [Result](documentation/p4_products_admin.jpg)      |  
+| models.py          | ✅    | [Result](documentation/p4_products_models.jpg)      |  
+| urls.py          | ✅    | [Result](documentation/p4_products_urls.jpg)      |  
+| views.py          | ✅    | [Result](documentation/p4_products_views.jpg)      |  
 | My Project     |   |   |  
 | settings.py          | ✅    | [Result](documentation/p4_myproject_settings.jpg)      |  
 | urls.py          | ✅    | [Result](documentation/p4_myproject_urls.jpg)      | 
@@ -63,6 +69,9 @@ The Python files for this project were validated using  [PEP8 CI Online](https:/
 | Home | Click on the "Blog" link | The user is redirected to the main page | Yes | Yes | - |
 | About | Click on the "About" link | The user is redirected to the for about | Yes | Yes | - |
 | Contact | Click on the "Contact" link | The user is redirected to the contact page | Yes | Yes | - |
+| Products | Click on the "Products" link | The user is redirected to the products | Yes | Yes | - |
+| Login | Click on the "Login" link | The user is redirected to the login page | Yes | Yes | - |
+| Register | Click on the "Register" link | The user is redirected to the registration page | Yes | Yes | - |
 | Contact page | | | | | |
 | Name input | Enter  name | name is entered | Yes | Yes | If user doesn't enter the  name, the error message appears |
 | Email input | Enter the email | The email is entered | Yes | Yes | If user doesn't enter the email, the error message appears. If user enters not valid email, the error message appears |
@@ -76,8 +85,12 @@ The Python files for this project were validated using  [PEP8 CI Online](https:/
 | Twitter icon in the footer | Click on the Twitter icon | The user is redirected to the Twitter page | Yes | Yes | - |
 | YouTube icon in the footer | Click on the YouTube icon | The user is redirected to the YouTube page | Yes | Yes | - |
 | Blog page | | | | | |
-| Read More  |When user clicks on this the can view the full log post | | Yes|Yes | |
-|User Login | Submit registration form   | The user can then view and leave a comment | Yes | Yes | - |
-
+| |Read More  |When user clicks on this the can view the full log post | | Yes|Yes | |
+||Logged in user  |  The user can then view and leave a comment | Yes | Yes | - |
+| | |  Can also edit and delete comments they have made | Yes | Yes | - |
+| Products page | | | | | |
+|  |When user clicks on this they can see a detailed post of the product of the month  | | Yes|Yes | |
+| Booking page | | | | | |
+|A Logged in User | Can book a free trial  | They can select date and time and recive notification booking is accepyed | Yes | Yes | - |
 
 ## Lighthouse Report
