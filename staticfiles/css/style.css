@@ -74,11 +74,9 @@ body {
 
 .card {
     box-shadow: 0 16px 48px #E3E7EB;
+    align-content: center;
 }
 
-.card-img-top {
-    position: absolute;
-}
 
 .btn-delete {
     color: #fff;
