@@ -1,4 +1,6 @@
 body {
+    min-height: 100vh;
+    display: flex;
     font-family: "Roboto", sans-serif;
     font-size: 17px;
     background-color: #fcf8f8;
