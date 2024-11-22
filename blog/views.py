@@ -1,7 +1,5 @@
-from django.shortcuts import render, get_object_or_404 ,reverse
+from django.shortcuts import render, get_object_or_404
 from django.views import generic
-from django.contrib import messages
-from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
 
@@ -10,9 +8,11 @@ class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = "blog/index.html"
 
+
 class PostDetail(generic.DetailView):
     model = Post
     template_name = 'blog/post_detail.html'
+
 
 def post_detail(request, slug):
     queryset = Post.objects.filter(status=1)
@@ -28,18 +28,18 @@ def post_detail(request, slug):
             comment.save()
             messages.add_message(
                 request, messages.SUCCESS,
-            'Comment submitted and awaiting approval'
-    )
+                'Comment submitted and awaiting approval'
+                )
     comment_form = CommentForm()
 
     return render(
         request,
         "blog/post_detail.html",
         {"post": post,
-        "comments": comments,
-        "comment_count": comment_count,
-        "comment_form": comment_form,}
-    )
+         "comments": comments,
+         "comment_count": comment_count,
+         "comment_form": comment_form, }
+        )
 
 
 def comment_edit(request, slug, comment_id):
@@ -63,7 +63,7 @@ def comment_edit(request, slug, comment_id):
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
             messages.add_message(request, messages.ERROR,
-                                'Error updating comment!')
+                                 'Error updating comment!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 

@@ -1,6 +1,7 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
 
+
 class Product(models.Model):
     name = models.CharField(max_length=200, unique=True)
     featured_image = CloudinaryField('image', default='placeholder')

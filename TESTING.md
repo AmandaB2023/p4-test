@@ -5,6 +5,56 @@ This project was  tested throughout the development stage.
 
 ## Validator
 
+### HTML
+
+All HTML was validated using  [HTML W3C Validator](https://validator.w3.org)
+
+### CSS
+
+All Css was validated using [W3C Jigsaw](https://jigsaw.w3.org/css-validator/)
+
+| File Name             | Pass | View Result                                                              | Notes                                                                                                                                                                                            |
+| --------------------- | ---- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Home       |   |   |  
+| base.css          | ✅    | [Result](documentation/p4_css.jpg)      |  
+  
+### Javascript
+
+The javascrip for this project was validated using [Jshint](https://jshint.com/)
+| File Name             | Pass | View Result                                                              | Notes                                                                                                                                                                                            |
+| --------------------- | ---- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| base.css          | ✅    | [Result](documentation/p4_comments.jpg)      |  
+
+### Python 
+
+The Python files for this project were validated using  [PEP8 CI Online](https://pep8ci.herokuapp.com/) in which there was a few issues with the lines of code being too long but i choose to leave these as they were not errors in the code as such and in most situations the overrun was minimal.
+
+| File Name             | Pass | View Result                                                              | Notes                                                                                                                                                                                            |
+| --------------------- | ---- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Blog     |   |   |  
+| admin.py          | ✅    | [Result](documentation/p4_blog_admin.jpg)      |  
+| models.py          | ✅    | [Result](documentation/p4_blog_models.jpg)      |  
+| urls.py          | ✅    | [Result](documentation/p4_blog_urls.jpg)      |  
+| views.py          | ✅    | [Result](documentation/p4_blog_views.jpg)      |  
+| About       |   |   |  
+| admin.py          | ✅    | [Result](documentation/p4_about_admin.jpg)      |  
+| models.py          | ✅    | [Result](documentation/p4_about_models.jpg)      |  
+| urls.py          | ✅    | [Result](documentation/p4_about_urls.jpg)      |  
+| views.py          | ✅    | [Result](documentation/p4_about_views.jpg)      |  
+| Contact      |   |   |  
+| forms.py          | ✅    | [Result](documentation/p4_contact_forms.jpg)      |  
+| models.py          | ✅    | [Result](documentation/p4_contact_models.jpg)      |  
+| urls.py          | ✅    | [Result](documentation/p4_contact_urls.jpg)      |  
+| views.py          | ✅    | [Result](documentation/p4_contact_views.jpg)      |  
+| Booking     |   |   |  
+| admin.py          | ✅    | [Result](documentation/p4_boooking_admin.jpg)      |  
+| models.py          | ✅    | [Result](documentation/p4_booking_models.jpg)      |  
+| urls.py          | ✅    | [Result](documentation/p4_booking_urls.jpg)      |  
+| views.py          | ✅    | [Result](documentation/p4_booking_views.jpg)      |  
+| My Project     |   |   |  
+| settings.py          | ✅    | [Result](documentation/p4_myproject_settings.jpg)      |  
+| urls.py          | ✅    | [Result](documentation/p4_myproject_urls.jpg)      | 
+
 ## Manual Testing
 
 | Section Tested | Input To Validate | Expected Outcome |  Pass/Fail |

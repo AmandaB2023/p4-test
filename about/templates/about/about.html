@@ -11,7 +11,7 @@
     {% if "placeholder" in about.profile_image.url %}
     <img src="{% static 'images/about-image.webp' %}" width="50%" style="margin: 1.3em;" alt="placeholder image">
     {% else %}
-    <img src="{{ about.profile_image.url }}" width="50%" alt="{{ about.title }}">
+    <img src="{{ about.profile_image.url }}" width="50%" style="margin: 1.3em;" alt="{{ about.title }}">
     {% endif %}
     <!-- Content goes directly underneath this -->
     {{ about.content | safe }}

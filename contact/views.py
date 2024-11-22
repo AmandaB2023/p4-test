@@ -10,7 +10,9 @@ def contact_view(request):
             return render(request, 'contact/success.html')
     form = ContactForm()
     context = {'form': form}
-    return render(request, 'contact/contact.html', context)   
+    return render(request, 'contact/contact.html', context)
+
 
 def contact_success(request):
     return render(request, 'contact/success.html')
+    
