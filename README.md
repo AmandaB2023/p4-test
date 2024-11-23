@@ -80,32 +80,6 @@ The wireframes for the website were designed using  [Canva](https://www.canva.co
 ![Contact_wireframe](documentation/contact.jpg)
 
 
-## Technologies Used
-The following technologies were used to complete this project.
-
-### Languages:
-*   [Python](https://www.python.org/downloads/release/python-385/): the primary language used to develop the blog
-*   [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML):the markup language used to create the blog.
-*   [CSS](https://developer.mozilla.org/en-US/docs/Web/css):the styling language used to style the blog.
-
-### Frameworks
-*   [Django](https://www.djangoproject.com/): python framework used to create all the logic.
-*   [GitHub](https://github.com/) was used to host the project code after being pushed.
-*   [Heroku](https://dashboard.heroku.com/apps) - was used to deploy the project.
-
-### Databases:
-*   [SQLite](https://www.sqlite.org/): this database was used during development .
-*   [PostgreSQL](https://www.postgresql.org/): is the database used to store all blog data.
-
-### Other
-*   [Gunicorn](https://gunicorn.org/): is the web server used to run the blog.
-*   [Psycopg2](https://www.psycopg.org/): is the database driver.
-*   [Django-allauth](https://django-allauth.readthedocs.io/en/latest/): the authentication library used to create user accounts.
-*   [Django-crispy-forms](https://django-cryptography.readthedocs.io/en/latest/): was used to control the rendering behavior of Django forms.
-*   W3C CSS Validation [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
-*   W3C Markup Validation [W3C Markup Validation](https://validator.w3.org/)
-*   JSHint to validate my javascript code [JSHint](https://jshint.com/)
-
 ## Design
 
 The design of the blog was kept very basic to allow for the content of each blog post to be the feature.
@@ -148,6 +122,34 @@ Please refer to the [TESTING](TESTING.md) file for all test-related documentatio
 Was used in order to manage the development of the blog for my project , this was my first time using Github project Managment and I while I am still getting used to using this tool I found it very benefical to see what tasks I had completed and what was still outstanding.
 
 ![Github project Management](documentation/project-management.jpg)
+
+## Technologies Used
+
+The following technologies were used to complete this project.
+
+### Languages:
+*   [Python](https://www.python.org/downloads/release/python-385/): the primary language used to develop the blog
+*   [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML):the markup language used to create the blog.
+*   [CSS](https://developer.mozilla.org/en-US/docs/Web/css):the styling language used to style the blog.
+
+### Frameworks
+*   [Django](https://www.djangoproject.com/): python framework used to create all the logic.
+*   [GitHub](https://github.com/) was used to host the project code after being pushed.
+*   [Heroku](https://dashboard.heroku.com/apps) - was used to deploy the project.
+
+### Databases:
+*   [SQLite](https://www.sqlite.org/): this database was used during development .
+*   [PostgreSQL](https://www.postgresql.org/): is the database used to store all blog data.
+
+### Other
+*   [Gunicorn](https://gunicorn.org/): is the web server used to run the blog.
+*   [Psycopg2](https://www.psycopg.org/): is the database driver.
+*   [Django-allauth](https://django-allauth.readthedocs.io/en/latest/): the authentication library used to create user accounts.
+*   [Django-crispy-forms](https://django-cryptography.readthedocs.io/en/latest/): was used to control the rendering behavior of Django forms.
+*   W3C CSS Validation [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+*   W3C Markup Validation [W3C Markup Validation](https://validator.w3.org/)
+*   JSHint to validate my javascript code [JSHint](https://jshint.com/)
+
 ## Deployment
 
 

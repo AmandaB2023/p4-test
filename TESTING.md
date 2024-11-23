@@ -74,6 +74,10 @@ The website was also checked using the responsive viewer extention on google chr
 
 All HTML was validated using  [HTML W3C Validator](https://validator.w3.org)
 
+| File Name             | Pass | View Result                                                              | Notes                                                                                                                                                                                            |
+| --------------------- | ---- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Home       |   |   |  
+| base.html         | ✅    | [Result](documentation/p4_base_html.jpg)      |  
 ### CSS
 
 All Css was validated using [W3C Jigsaw](https://jigsaw.w3.org/css-validator/)
