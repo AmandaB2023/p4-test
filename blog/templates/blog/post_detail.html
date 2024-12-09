@@ -17,7 +17,7 @@
         <p class="card-text">
           {{ post.content | safe }}
         </p>
-        <button class="btn btn-signup right" onclick="history.back()">Go Back</button>
+        <button class="btn btn-back right" onclick="history.back()">Go Back</button>
       </div>
     </div>
 
@@ -96,7 +96,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="deleteModalLabel">Delete comment?</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
       </div>
       <div class="modal-body">
         Are you sure you want to delete your comment?

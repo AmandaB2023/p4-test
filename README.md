@@ -1,5 +1,7 @@
 # Fitness Club Blog
 
+Fitness Club is a fictional gym based in galway, they also has an online blog with posts coverong all the various differents aspects of health and fitness , as well as this they also do monthly product reviews and offer all the usual  and fitness  classes onsite.
+
 ## User Stories
 
 ### Basic User
@@ -152,15 +154,39 @@ The following technologies were used to complete this project.
 
 ## Deployment
 
+### Deployment using Heroku
 
-#### Deployment to GitHub Pages
-The site was deployed to GitHub pages. The steps to deploy are as follows:
-*   In the GitHub repository, navigate to the Settings tab
-*   From the source section drop-down menu, select the Main Branch, then click "Save".
-*   The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+To deploy the repository:
+1.   Log into or sign up for a Heroku account.
+2.   Navigate to the dashboard.
+3.   Navigate to "New" in the top right, select "Create New App" from dropdown menu
+4.   Enter a unique name for the app. 
+5.   Select your region.
 
-The live link can be found here: [Github]()
+![Heroku](documentation/blog_heroku1.jpg)
 
+6.   Click  "Create App".
+7.   Navigate to "Deploy"  scroll down to "Deploy Method" and connect the repository with GitHub.
+8.   Navigate to "Settings".
+9.   In the section "Config Var", click on the button "Reveal Config Vars".
+10. Click on "Add a new Config Var" and add the necessary keys and values.
+    - SECRET_KEY with the value of the secret key.
+    - DATABASE_URL with the value of the database URL.
+    - CLOUDINARY_URL with the value of the cloudinary URL.
+11. Navigate to section "Deploy" on the top navigation menu.
+12. Select "GitHub" as the deployment method.
+
+![Heroku](documentation/blog_heroku2.jpg)
+
+13. Search for the repository to be deployed by using the search bar and click "Connect".
+14. Select the repository branch to be deployed.
+15. Choose "Manual" deployment.
+    - Manual deployment must be manually re-deployed after pushing new changes to the repository.
+    - Crucial when working with DEBUG=True during development.
+
+![Heroku](documentation/blog_heroku3.jpg)
+
+16.  Click the button "View" to open the link to the deployed project
 
 #### Local Deployment
 In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository.
@@ -178,6 +204,8 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 6.  Then type cd and the directory name.
 
 7. Then code . to open VS Studio using Windows.
+
+
 
 ## Future Improvments
 
