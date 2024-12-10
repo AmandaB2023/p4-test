@@ -38,7 +38,7 @@ Fitness Club is a fictional gym based in galway, they also has an online blog wi
 
 * The blog will be responsive ona variety of devices,  I will also test it on various devices and screen sizes.
 
-* A listt of blog posts will be displayed on the home/ blog page.
+* A list of blog posts will be displayed on the home/ blog page.
 
 * A user can then click on a blog post to read the full article.
 

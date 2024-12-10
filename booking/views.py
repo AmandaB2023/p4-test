@@ -83,7 +83,6 @@ def bookingSubmit(request):
         'times': hour,
     })
 
-
 def userPanel(request):
     user = request.user
     appointments = Appointment.objects.filter(user=user).order_by('day', 'time')

@@ -72,12 +72,23 @@ The website was also checked using the responsive viewer extention on google chr
 
 ### HTML
 
-All HTML was validated using  [HTML W3C Validator](https://validator.w3.org)
+All HTML was validated using  [HTML W3C Validator](https://validator.w3.org) and passed valiation except for the blog post detail which I choose not to fix as the errors arose from using the django summernote plugin and to alter such would have lead to a decreaded user experience.
 
 | File Name             | Pass | View Result                                                              | Notes                                                                                                                                                                                            |
 | --------------------- | ---- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Home       |   |   |  
+| Blog       |   |   |  
 | base.html         | ✅    | [Result](documentation/p4_base_html.jpg)      |  
+| post_detail.html         |  ❌   | [Result](documentation/blog_post_detail_w3.jpg)      |  
+| About      |   |   |  
+| about.html         | ✅    | [Result](documentation)      |  
+| Contact     |   |   |  
+| contact.html         | ✅    | [Result](documentation/contact_w3.jpg)      |  
+| contact_success.html         | ✅    | [Result](documentation/contact_sucess_w3.jpg)      |  
+| Products      |   |   |  
+| products.html         | ✅    | [Result](documentation/products_w3.jpg)      |  
+| Free Trial      |   |   |  
+| booking.html         | ✅    | [Result](documentation/booking_w3.jpg)      | 
+
 ### CSS
 
 All Css was validated using [W3C Jigsaw](https://jigsaw.w3.org/css-validator/)

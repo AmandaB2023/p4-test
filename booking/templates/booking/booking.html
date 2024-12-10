@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 {% load static %}
-<title>Book A Free Trial</title>
+
 
 
 {% if user.is_authenticated %}
 <h1 class="text-center  mt-3">Book A Free Trial</h1>
 
 <div class="shadow p-4 mb-5 bg-body bg-body rounded text-black text-center m-5 ">
-    <form method="post" action="{% url 'booking' %}" class="me-2 ms-2" required>
+    <form method="post" action="{% url 'booking' %}" class="me-2 ms-2" SSS>
         {% csrf_token %}
 
         <!--input service-->
@@ -28,10 +28,10 @@
             </select>
         </div>
 
-        <br />
+        <br>
         <button type="submit" class="btn btn-primary text-white">Continue</button>
-</div>
-</form>
+
+    </form>
 </div>
 
 {% else %}
