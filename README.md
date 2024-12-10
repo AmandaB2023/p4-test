@@ -173,6 +173,7 @@ To deploy the repository:
     - SECRET_KEY with the value of the secret key.
     - DATABASE_URL with the value of the database URL.
     - CLOUDINARY_URL with the value of the cloudinary URL.
+    - COLLECTSTATIC with the value of 1.
 11. Navigate to section "Deploy" on the top navigation menu.
 12. Select "GitHub" as the deployment method.
 
