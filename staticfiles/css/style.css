@@ -64,6 +64,12 @@ body {
     color: #23BBBB;
 }
 
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #b5dad8;
+    color: #23BBBB;
+}
+
 .footer {
     background-color: #3398E1;
     position: relative;
