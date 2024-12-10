@@ -64,13 +64,13 @@
                         </li>
                         <li>
                             <a class="nav-link
-                            {% if request.path == contact_url %}active{%endif%}" aria-label=" Products page"
+                            {% if request.path == contact_url %}active{%endif%}" aria-label=" products page"
                                 href="{% url 'products_list' %}">Products</a>
                         </li>
                         {% if user.is_authenticated %}
                         <li>
                             <a class="nav-link
-                            {% if request.path == contact_url %}active{%endif%}" aria-label=" Free Trial page"
+                            {% if request.path == contact_url %}active{%endif%}" aria-label=" free trial page"
                                 href="{% url 'booking' %}">Free Trial</a>
                         </li>
                         <li class="nav-item">

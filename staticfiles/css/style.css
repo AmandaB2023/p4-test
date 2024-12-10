@@ -66,8 +66,8 @@ body {
 
 .btn-primary:hover,
 .btn-primary:active {
-    background-color: #b5dad8;
-    color: #23BBBB;
+    background-color: #23BBBB;
+    color: #fff;
 }
 
 .footer {
