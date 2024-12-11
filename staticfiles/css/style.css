@@ -58,13 +58,21 @@ body {
     color: #E84610;
 }
 
-.btn:hover,
-.btn:active {
+.btn:hover {
     background-color: #fff;
     color: #23BBBB;
 }
 
-.btn-primary:hover,
+.btn:active {
+    background-color: #23BBBB;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #23BBBB;
+}
+
 .btn-primary:active {
     background-color: #23BBBB;
     color: #fff;

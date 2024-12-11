@@ -17,7 +17,7 @@
         <p class="card-text">
           {{ post.content | safe }}
         </p>
-        <button class="btn btn-back right" onclick="history.back()">Go Back</button>
+        <button class="btn btn-primary right" onclick="history.back()">Go Back</button>
       </div>
     </div>
 
@@ -78,7 +78,7 @@
         <form id="commentForm" method="post" style="margin-top: 1.3em;">
           {{ comment_form | crispy }}
           {% csrf_token %}
-          <button id="submitButton" type="submit" class="btn btn-lg">Submit</button>
+          <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
         </form>
 
       </div>
